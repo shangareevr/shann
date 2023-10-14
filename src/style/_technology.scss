@@ -1,0 +1,34 @@
+.technology{
+  margin: 0 auto;
+  &__wrapper{
+    max-width: 1840px;
+    border-radius: 60px;
+    background: #FFF;
+    margin: 0 auto;
+    padding-top: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title{
+    font-size: 68px;
+    line-height: 65px;
+    letter-spacing: -1.36px;
+    span{
+      color: #009BFF;
+    }
+  }
+  &__subtitle{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  &__info{
+    margin-top: 60px;
+    display: flex;
+    gap: 100px;
+    padding-bottom: 140px;
+  }
+}

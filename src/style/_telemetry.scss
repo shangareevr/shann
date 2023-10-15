@@ -1,6 +1,6 @@
 .telemetry{
   margin: 0 auto;
-  margin-top: 21px;
+  // margin-top: 21px;
   max-width: 1840px;
   background: url(../img/telemetry_bg.svg);
   background-position: 0;
@@ -10,12 +10,33 @@
   position: sticky;
   top: 15px;
   z-index: 3;
+  @media(max-width:1400px){
+    margin: 21px 5px;
+    border-radius: 15px;
+  }
+  @media(max-width:1200px){
+    margin-top: 15px;
+  }
   &__wrapper{
     padding-top: 187px;
     padding-left: 229px;
     display: flex;
     gap: 170px;
     align-items:flex-start;
+    @media(max-width:1620px){
+      padding-left: 0;
+      justify-content: space-between;
+      gap: auto;
+    }
+    @media(max-width:1420px){
+      flex-direction: column;
+      align-items: center;
+      gap: 31px;
+      padding-bottom: 104px;
+    }
+    @media(max-width:720px){
+      padding-top: 120px;
+    }
   }
   &__title{
   font-size: 68px;
@@ -23,6 +44,12 @@
   letter-spacing: -1.36px;
   span{
     color: #009BFF;
+  }
+  @media(max-width:1200px){
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.6px;
   }
   }
   &__text{
@@ -35,6 +62,14 @@
     line-height: 35px;
     max-width: 624px;
     padding-bottom: 138px;
+    @media(max-width:1420px){
+      padding-bottom: 0;
+    }
+    @media(max-width:1200px){
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 27px;
+    }
   }
   &__item{
     margin-top: 25.6px;
@@ -51,11 +86,27 @@
       position: absolute;
       top: 14px;
       left: 0px;
+      @media(max-width:1200px){
+        width: 6px;
+        height: 6px;
+        top: 7px;
+      }
+    }
+    @media(max-width:1200px){
+      max-width: 316px;
+      margin: 0 auto;
+      margin-top: 15px;
+      margin-left: 20px;
+      padding-left: 14px;
     }
   }
   &__img{
     position: relative;
     z-index: 5;
+    @media(max-width:1200px){
+      width: 280px;
+      height: 231.729px;
+    }
   }
   &__fugure{
     position: relative;
@@ -70,9 +121,18 @@
       width: 475px;
       height: 475px;
       border-radius: 475px;
-      background: rgba(255, 255, 255, 0.15);
+      background: #EAEFF9;
       top: 68px;
       left: 154px;
+      @media(max-width:1200px){
+        width: 250.943px;
+        height: 253.037px;
+        left: 14.79px;
+        top: 31.96px;
+      }
+    }
+    @media(max-width:1420px){
+      order: 2;
     }
   }
 }

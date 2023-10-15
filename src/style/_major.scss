@@ -1,6 +1,6 @@
 .major{
   &__wrapper{
-    width: 1460px;
+    max-width: 1460px;
     margin: 0 auto;
     padding-left: 10px;
     margin-top: 120px;
@@ -8,11 +8,34 @@
     background: url('../img/starting.svg') no-repeat;
     mix-blend-mode: multiply;
     padding-bottom: 255px;
-    background-position: 110% top;
-    z-index: 1;
+    background-position:  110% top;
+    @media(max-width:1440px){
+      padding-left:10px;
+      padding-right:10px;
+    }
+    @media(max-width:1300px){
+      background: url('../img/starting-mobile.svg') no-repeat;
+      background-position:  100% top;
+      margin-top:100px;
+      padding-bottom: 80px;
+    }
+    @media(max-width: 1000px){
+      background-position: top;
+      margin-top: 35px;
+      padding-top: 300px;
+      padding-bottom: 80px;
+    }
+    @media(max-width: 750px){
+      padding-left:15px;
+      padding-top: 266px;
+      padding-bottom: 80px;
+    }
   }
   &__content{
     max-width:804px;
+    @media(max-width:1300px){
+      margin-top: 0px;
+    }
   }
   &__title{
     font-size: 68px;
@@ -21,17 +44,42 @@
     span{
       color: #009BFF;
     }
+    @media(max-width:1400px){
+      font-size: 40px;
+    }
+    @media(max-width:600px){
+      font-size: 30px;
+      letter-spacing: -0.6px;
+      line-height: 30px;
+    }
   }
   &__subtitle{
     margin-top: 35px;
     font-size: 24px;
     font-weight: 500;
     line-height: 30px;
+    @media(max-width:1400px){
+      font-size: 20px;
+    }
+    @media(max-width:720px){
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 17px;
+    }
   }
   &__btns{
     margin-top: 71px;
     display: flex;
     gap: 15px;
+    @media(max-width:1400px){
+      flex-direction: column;
+      align-items: center;
+    }
+    @media(max-width:720px){
+      margin-top: 33px;
+      margin-left: -6px;
+      gap: 10px;
+    }
   }
   &__btn-offer{
     width: 258px;
@@ -41,6 +89,13 @@
     color: #FFF;
     font-size: 16px;
     line-height: 25px;
+    @media(max-width:1400px){
+      width: 350px;
+    }
+    @media(max-width:780px){
+    font-size: 14px;
+    line-height: 20px;
+    }
   }
   &__btn-call{
     width: 415px;
@@ -56,5 +111,9 @@
     gap: 10px;
     align-items: center;
     text-align: center;
+    @media(max-width:1400px){
+      width: 350px;
+      font-size: 14px;
+    }
   }
 }

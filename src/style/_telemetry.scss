@@ -1,54 +1,53 @@
-.engine{
+.telemetry{
   margin: 0 auto;
   margin-top: 21px;
   max-width: 1840px;
-  background: url(../img/engine-bg.png);
+  background: url(../img/telemetry_bg.svg);
   background-position: 0;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 60px;
   position: sticky;
   top: 15px;
-  z-index: 2;
+  z-index: 3;
   &__wrapper{
-    padding-top: 192px;
-    padding-left: 200px;
+    padding-top: 187px;
+    padding-left: 229px;
     display: flex;
-    gap: 209px;
+    gap: 170px;
     align-items:flex-start;
   }
   &__title{
-    color: #FFF;
   font-size: 68px;
   line-height: 65px;
   letter-spacing: -1.36px;
   span{
-    color: rgba(255, 255, 255, 0.80);
+    color: #009BFF;
   }
   }
   &__text{
-    margin-top: 50px;
+    margin-top: -58px;
   }
   &__list{
     margin-top: 44px;
-    color: #FFF;
     font-size: 24px;
     font-weight: 500;
     line-height: 35px;
     max-width: 624px;
-    padding-bottom: 249px;
+    padding-bottom: 138px;
   }
   &__item{
-    margin-top: 25px;
+    margin-top: 25.6px;
     position: relative;
     padding-left: 18px;
+    width: 720px;
     &::after{
       content: '';
       display: block;
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background-color: #fff;
+      background-color: #009BFF;
       position: absolute;
       top: 14px;
       left: 0px;

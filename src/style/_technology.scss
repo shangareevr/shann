@@ -1,4 +1,10 @@
+.infomation{
+
+}
 .technology{
+  position: sticky;
+  top: 15px;
+  z-index: 1;
   margin: 0 auto;
   &__wrapper{
     max-width: 1840px;

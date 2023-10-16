@@ -43,3 +43,31 @@ body {
 button{
   cursor: pointer;
 }
+.wrapper{
+  max-width: 2684px;
+  margin: 0 auto;
+  position: relative;  
+  overflow: hidden;
+  &::before{
+    content: url('../img/before.svg');
+    max-width: 100px;
+    position: absolute;
+    top: 0;
+    left: -385px;
+    z-index: -1;
+    @media(max-width:1300px){
+      display: none;
+    }
+  }
+  &::after{
+    content: url('../img/after.svg');
+    max-width: 100px;
+    position: absolute;
+    top: 0;
+    right: 457px;
+    z-index: -1;
+    @media(max-width:1300px){
+      display: none;
+    }
+  }
+}

@@ -89,6 +89,10 @@
     color: #FFF;
     font-size: 16px;
     line-height: 25px;
+    &:hover{
+      background: rgba(0, 155, 255, 0.20);
+      color: #009BFF;
+    }
     @media(max-width:1400px){
       width: 350px;
     }

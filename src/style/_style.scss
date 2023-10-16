@@ -40,15 +40,6 @@ body {
   color: #2B2E3E;
   background: #F0F3F9;
 }
-// .wrapper{
-//   // width: 100vw;
-//   &::after{
-//     content: url('../img/bg-left.svg');
-//     position: absolute;
-//     top: 0;
-//     right:-400px;
-//     z-index: -1;
-//     max-width: 895px;
-//     height: 885px;
-//   }
-// }
+button{
+  cursor: pointer;
+}

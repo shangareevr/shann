@@ -54,6 +54,11 @@
     line-height: 25px;
     padding-top: 1px;
     text-align: center;
+    transition: all 0.5s ease-in;
+    &:hover{
+      background: rgba(0, 155, 255, 0.20);
+      color: #009BFF;
+    }
     @media(max-width:700px){
       background-color: rgba(0, 155, 255, 0.15);
       width: 45px;

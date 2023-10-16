@@ -12,7 +12,7 @@
         <img src="./img/logo.png" alt="logo" class="header__logo">
         <div class="header__contacts">
           <a href="tel:88005558080" class="header__tel">8 800 555 80 80</a>
-          <button class="header__btn"><span>Заказать звонок</span></button>
+          <button class="header__btn btn__open"><span>Заказать звонок</span></button>
         </div>
       </div>
     </header>
@@ -22,7 +22,7 @@
           <h1 class="major__title">электромобильный вилочный погрузчик <br><span>нового поколения SHANN</span></h1>
           <div class="major__subtitle">Оставьте заявку и получите консультацию специалиста</div>
           <div class="major__btns">
-            <button class="major__btn-offer">Получить предложение</button>
+            <button class="major__btn-offer btn__open">Получить предложение</button>
             <button class="major__btn-call"><img src="./img/phone.svg" alt="Call me"> Перезвоним в течении дня для консультации</button>
           </div>
         </div>
@@ -76,6 +76,27 @@
         </div>
       </div>
     </section>
+  </div>
+  <div class="overlay">
+    <div class="modal">
+      <div class="modal__wrapper">
+        <div class="modal__close"></div>
+        <div class="modal__title">Оставить заявку на консультацию</div>
+        <div class="modal__subtitle">Оставьте заявку – и наш менеджер свяжется <br> с вами, узнает ваши потребности и предложит идеальный погрузчик под ваши задачи.</div>
+        <form class="modal__form" action="#">
+          <div class="modal__contacts">
+            <input type="text" placeholder="Имя">
+            <input type="number" placeholder="Телефон">
+            <input type="email" placeholder="E-mail">
+          </div>
+          <textarea placeholder="Пожелания по комплектации погрузчика" resize></textarea>
+          <div class="modal__submit">
+            <button class="modal__btn" type="submit">Отправить</button>
+            <p class="modal__agreement">Нажимая кнопку «Отправить», вы <br> соглашаетесь с<span> Политикой конфиденциальности</span> </p>
+        </div>
+        </form>
+      </div>
+    </div>
   </div>
 </body>
 </html>
